@@ -1,7 +1,11 @@
 module.exports = {
-  content: ["./index.html", "./src/**/*.{html,js}"],
+  content: ["./index.html", "./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'tiki-red': '#E61E2A',
+      }
+    },
   },
   plugins: [],
 }
