@@ -5,6 +5,7 @@ import Products from './pages/admin/Products';
 import Users from './pages/admin/Users';
 import Orders from './pages/admin/orders.tsx';
 import Login from './pages/admin/Login.tsx';
+import BookSearch from './pages/BookSearch';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="users" element={<Users />} />
           <Route path="orders" element={<Orders />} />
         </Route>
+        <Route path="/books" element={<BookSearch />} />
         <Route path="/" element={<Navigate to="/login" />} />
       </Routes>
     </BrowserRouter>
