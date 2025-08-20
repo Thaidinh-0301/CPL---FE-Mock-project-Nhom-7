@@ -6,6 +6,10 @@ import Users from './pages/admin/Users';
 import Orders from './pages/admin/orders.tsx';
 import Login from './pages/admin/Login.tsx';
 import BookSearch from './pages/BookSearch';
+import Cart from './components/Cart';
+import LoginDemo from './components/Login'; // UI demo
+import RegisterDemo from './components/Register'; // UI demo
+import OrderHistoryV2 from './components/OrderHistoryV2'; // Lịch sử đơn hàng giao diện Tiki
 
 function App() {
   return (
@@ -19,6 +23,11 @@ function App() {
           <Route path="orders" element={<Orders />} />
         </Route>
         <Route path="/books" element={<BookSearch />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/order-history" element={<OrderHistoryV2 />} />
+    {/* Demo UI Login/Register */}
+        <Route path="/login-demo" element={<LoginDemo />} />
+        <Route path="/register-demo" element={<RegisterDemo />} />
         <Route path="/" element={<Navigate to="/login" />} />
       </Routes>
     </BrowserRouter>
